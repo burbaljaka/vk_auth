@@ -19,5 +19,7 @@ from small_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
+    path('', views.home, name='home'),
+    path('gettoken/', views.gettoken, name = 'gettoken'),
+    path('main/', views.main, name = 'main')
 ]
